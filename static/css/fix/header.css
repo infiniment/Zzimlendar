@@ -1,0 +1,239 @@
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    min-width: 1260px;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 #151311;
+    transition: 0.2s;
+}
+
+#header .header-all-Wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    padding: 20px 0;
+    transition: 0.2s;
+}
+
+.header-inner-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 60px;
+}
+
+#header .zzimlendar-logo{
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 110px;
+    height: 40px;
+    font-size: 0;
+}
+
+#header .zzimlendar-logo a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-image: url(//brownhaus.co.kr/images/common/logo.svg);/*여기에 js로 image 클릭하면 url함수 안에 링크로 이동되게 즉 홈페이지로 이동되게 만들어야됨*/
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.zzimlendar-span {
+    display: block;
+    overflow: hidden;
+    position: absolute !important;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+#header .zzim-menu {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    pointer-events: none;
+}
+
+.zzim-menubar {
+    margin: 0 0 30px;
+}
+
+#header .zzim-menu .zzim-mainbar {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    pointer-events: auto;
+}
+
+#header .zzim-menu .zzim-mainbar > li:first-child {
+    margin-left: 0;
+}
+
+#header .zzim-menu .zzim-mainbar > li {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-left: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+#header .zzim-menu .zzim-mainbar > li > a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #151311;
+    line-height: 40px;
+}
+
+#header .zzim-menu .zzim-mainbar:last-child {
+    margin-left: 40px; 
+    padding-left: 40px;
+}
+
+#header .zzim-menu .zzim-mainbar:last-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 14px;
+    margin-top: -7px;
+    background-color: #151311;
+}
+
+#header .zzim-menu .zzim-mainbar:last-child > li > a {
+    letter-spacing: -0.5px;
+}
+
+#header .zzim-menu .zzim-mainbar > li[name="찜린더"] a {
+    margin: 3px 0;
+    padding: 0 20px;
+    border-radius: 17px;
+    color: #fff;
+    line-height: 34px;
+    background-color: #151311;
+}
+
+#header .zzim-nav {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+}
+
+#header .zzim-nav div > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+#header .zzim-nav div > ul > li > a, #header .zzim-nav div > ul > li > button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px; 
+}
+
+
+button {
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#header .zzim-nav .zzim-icon.search {
+    background-position: left 0;
+}
+
+#header .zzim-nav .zzim-icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(//brownhaus.co.kr/images/common/icon_nav.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#header .zzim-nav .zzim-icon.mypage {
+    background-position: left -40px;
+}
+
+#header .zzim-nav .zzim-icon.mypage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    top: 0;
+}
+
+#header .zzim-nav .login-btn {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 60px;
+    height: 20px;
+    margin: 10px 0;
+    margin-left: 10px;
+    background-color: #151311;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 21px;
+    letter-spacing: 0;
+}
+
+
+
+
+
+
+/* 미디어 쿼리 */
+/* @media (min-width: 1440px) {
+    #header .zzim-menu .zzim-mainbar > li {
+        margin-left: 30px;
+    }
+
+    #header .zzim-menu .zzim-mainbar:last-child {
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+} */
