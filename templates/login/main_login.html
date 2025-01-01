@@ -8,32 +8,30 @@
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="wrapper">
         <header id="header" data-ez="contents-1ipi7v6-1">
 
 
-
         </header>
-        <div class="main_contents" id="main_contents">
-            <div class="m_wrap m_info">
+        <div class="login-wrapper" id="login_contents">
+            <div class="login-data">
                 <div class="title t3 bold mn60 p10 center">
                     <h2 class="center"> LOGIN</h2>
                 </div>
-                <div class="id&pw">
-                    <form id="member_id" name="member_form" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
+                <div class="id&pw-wrap">
+                    <form id="member_form" name="member_form" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
                         <!-- action에 폼 데이터를 처리할 서버의 URL을 지정해야함. -->
                         <div class="login">
                             <fieldset>
                                 <legend>LOGIN</legend>
                                 <ul class="login&search">
-                                    <li class="touch">
+                                    <li class="color_on">
                                         <a href="#"> <!-- 로그인 버튼을 누른 경우 가게 될 주소 -->
                                             <span>로그인</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#"> <!-- 찜린더 조회를 누른 경우 가게 될 주소 -->
-                                            <i></i>
                                             <span>찜린더 조회</span>
                                         </a>
                                     </li>
@@ -44,13 +42,13 @@
                                     <input id="id" name="id" fw-filter="isFill" fw-label="아이디" fw-msg
                                         class="inputTypeText" placeholder="아이디를 입력해주세요" value type="text">
                                 </label>
-                                <label class="pw" title="비밀번호 입력">
+                                <label class="input_pw" title="비밀번호 입력">
                                     <span class="label">USER PW</span>
                                 <input id="pw" name="pw" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드"
                                     fw-msg="" autocomplete="off" value="" type="password" placeholder="비밀번호 입력">
                                 </label>
                                 <div class="security">
-                                    <div class="id_save">
+                                    <div class="save_id">
                                         <input id="save_id" name="save_id" fw-filter=""
                                             fw-label="아이디 저장" fw-msg="" value="T" type="checkbox">
                                         </input>

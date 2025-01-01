@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜린더</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header" data-ez="contents-1ipi7v6-1">
+
+
+        </header>
+        <div class="find-wrapper" id="find-contents">
+            <div class="title t3 bold mn60 p10 center">
+                <h2 class="center">FIND ID</h2>
+            </div>
+            <p class="info">
+                아이디를 잊으셨나요?
+                <br>
+                아래의 인증방법을 선택하시고 정보를 입력해주세요.
+            </p>
+            <div class="find_wrap">
+                <form id="find_id_form" name="find_id_form" action="/exec/front/Member/findId/" method="post" target="_self" enctype="multipart/form-data">
+                    <!-- action에 폼 데이터를 처리할 서버의 URL을 지정해야함. -->
+            <div class="findId findWrap">
+                <fieldset>
+                    <legend>이메일 찾기</legend>
+                    <p>
+                        <strong>인증방법</strong>
+                        <span class="check_method">
+                            <!-- 이메일 체크 박스 만들기-->
+                            <input id="check_method1" name="check_method" fw-filter fw-label="찾는방법" fw-msg value="1" type="radio" checked="checked">
+                            <label for="check_method1">이메일</label>
+                            <!-- 휴대폰번호 체크 박스 만들기-->
+                            <input id="check_method2" name="check_method" fw-filter fw-label="찾는방법" fw-msg value="2" type="radio">
+                            <label for="check_method2">
+                                <span id="search_phone_number" style="display: inline;">휴대폰번호
+                                </span>
+                            </label>
+                        </span>
+                    </p>
+                    <!-- 이름 입력 텍스트 만들기-->
+                    <p id="input_name" class="name" style>
+                        <strong id="name_label">이름</strong>
+                        <input id="name" name="name" fw-filter fw-label="이름" fw-msg class="lostInput" placeholder value type="text">
+                    </p>
+                    <!-- 이메일러 찾기 텍스트 만들기-->
+                    <p id="input_email" class="email" style>
+                        <strong>이메일로 찾기</strong>
+                        <input id="email" name="email" fw-filter="isEmail" fw-label="이메일" fw-msg class="lostInput" placeholder value type="text">
+                    </p>
+                    <!-- OK 버튼 만들기-->
+                    <div class="ok_btn">
+                        <a href="#none" class="btn big t3" onclick="findId.action('zzimlendar', 'kcp'); return false;">OK</a>
+                    </div>
+                    </fieldset>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
