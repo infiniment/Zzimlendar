@@ -24,6 +24,10 @@ html {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .zzim-menu .position > ul > li > a:hover, .zzim-menu .position > ul > li.selected > a, .zzim-menu .position > ul > li.on > a {
     color: #008bcc;
 }
@@ -200,6 +204,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #c1c1c1;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 /* Montserrat Font Faces */
