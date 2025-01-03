@@ -1,0 +1,316 @@
+#main-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1260px;
+    background-color: #fff;
+    text-align: center;
+}
+
+##main-contents.contents-main {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.wrap {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 60px;
+}
+
+#main-contents.contents-main > .wrap > div {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#main-contents.contents-main .common-title {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#main-contents.contents-main .common-title img {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+#main-contents.contents-main .common-hero {
+    position: relative;
+    min-height: 500px;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#main-contents.contents-main .common-hero.auto .common-space {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    transition: 0.4s;
+    opacity: 0;
+    pointer-events: none;
+    animation-name: common_space_loading;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#main-contents.contents-main .common-hero .common-space {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 450 / 160;
+    background-color: #151311;
+}
+
+#main-contents.contents-main .common-hero .common-space i.a {
+    animation-duration: 1500ms;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+#main-contents.contents-main .common-hero .common-space i.a,
+#main-contents.contents-main .common-hero .common-space i.b,
+#main-contents.contents-main .common-hero .common-space i.c {
+    animation-name: common_space;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#main-contents.contents-main .common-hero .common-space i {
+    display: block;
+    position: absolute;
+    border: 3px solid #fff;
+    border-radius: 100%;
+}
+
+#main-contents.contents-main .common-hero .common-space i.b {
+    animation-duration: 4500ms;
+    transform-origin: 63% 63%;
+    width: 40px;
+    height: 40px;
+}
+
+#main-contents.contents-main .common-hero .common-space i.c {
+    animation-duration: 9000ms;
+    transform-origin: 74% 74%;
+    width: 20px;
+    height: 20px;
+}
+
+#main-contents.contents-main .common-hero .common-slide, #main-contents.contents-main .common-hero .common-slide.carousel .stage-outer, #main-contents.contents-main .common-hero .common-slide.carousel .stage, #main-contents.contents-main .common-hero .common-slide.carousel.drag .stage-item, #main-contents.contents-main .common-hero .common-slide.carousel.drag .item  {
+    position: relative;
+    min-height: 500x;
+    background-color: #151311;
+}
+
+.no-js .carousel, .carousel.loaded {
+    display: block;
+}
+
+.carousel, .carousel .stage-item {
+    -webkit-tap-highlight-color: transparent;
+}
+.carousel .stage-outer{
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.carousel .drag .stage-item {
+    user-select: none;
+}
+
+.carousel .stage-item {
+    float: left;
+    -webkit-backface-visibility: hidden;
+}
+
+.carousel .stage-item {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.carousel, .carousel .stage-item {
+    -webkit-tap-highlight-color: transparent;
+}
+
+#main-contents.contents-main .common-hero .common-text {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    height: 160px;
+    margin-top: -80px;
+    pointer-events: none;
+}
+
+#main-contents.contents-main .common-hero .common-text h3 {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    padding: 0 20px;
+    background-color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    color: #151311;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+#main-contents.contents-main .common-hero .common-text p {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+
+#main-contents.contents-main .common-hero .common-text p strong {
+    font-weight: 700; 
+}
+
+.carousel .stage-item img {
+    display: block;
+    width: 100%;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.carousel .stage::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#main-contents.contents-main .common-hero .common-slide .nav-btn {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    color: #fff;
+}
+
+#main-contents.contents-main .common-hero .common-slide .nav-btn > button {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    font-size: 0;
+}
+
+.carousel .slide-dot, .carousel .nav-btn .slide-next-btn, .carousel .nav-btn .slide-prev-btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+#main-contents.contents-main .common-hero .common-slide .nav-btn > button.slide-prev-btn::after {
+    transform: rotate(-135deg);
+}
+
+#main-contents.contents-main .common-hero .common-slide .nav-btn > button::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_arrow_white.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+#main-contents.contents-main .common-hero .slide-dots {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    z-index: 5;
+    width: 160px;
+    height: 10px;
+    margin-top: -5px;
+    margin-right: -80px;
+    font-size: 0;
+    transform: rotate(90deg);
+}
+
+#main-contents.contents-main .common-hero .slide-dots .slide-dot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    margin: 1px 6px;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+}
+#main-contents.contents-main .common-hero .slide-dots .slide-dot.active {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+
+@keyframes common_space_loading{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes common_space {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@media (max-width: 1440px) {
+    #main-contents.contents-main .common-hero .common-slide, #main-contents.contents-main .common-hero .common-slide.carousel .stage-outer, #main-contents.contents-main .common-hero .common-slide.carousel .stage, #main-contents.contents-main .common-hero .common-slide.carousel.drag .stage-item, #main-contents.contents-main .common-hero .common-slide.carousel.drag .item {
+        min-height: 390px;
+    }
+} 
+    
