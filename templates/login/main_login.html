@@ -13,13 +13,17 @@
         <header id="header" data-ez="contents-1ipi7v6-1">
 
 
+
         </header>
+
+
+
         <div class="login-wrapper" id="login_contents">
-            <div class="login-data">
+            <div class="cs_wrap cs_login">
                 <div class="title t3 bold mn60 p10 center">
                     <h2 class="center"> LOGIN</h2>
                 </div>
-                <div class="id&pw-wrap">
+                <div class="id_pw_wrap">
                     <form id="member_form" name="member_form" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
                         <!-- action에 폼 데이터를 처리할 서버의 URL을 지정해야함. -->
                         <div class = "xans-element- xans-member xams-member-login">
@@ -41,19 +45,15 @@
                                 <h3></h3>
                                 <label class="input_id" title="아이디 입력">
                                     <span class="label" style>USER ID</span>
-                                    <input id="id" name="id" fw-filter="isFill" fw-label="아이디" fw-msg
-                                        class="inputTypeText" placeholder="아이디를 입력해주세요" value type="text">
+                                    <input id="id" name="id" class="inputTypeText" placeholder="아이디를 입력해주세요" value type="text">
                                 </label>
                                 <label class="input_pw" title="비밀번호 입력">
                                     <span class="label">USER PW</span>
-                                <input id="pw" name="pw" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드"
-                                    fw-msg="" autocomplete="off" value="" type="password" placeholder="비밀번호 입력">
+                                <input id="pw" name="pw" autocomplete="off" value="" type="password" placeholder="비밀번호 입력">
                                 </label>
                                 <div class="security">
                                     <div class="save_id">
-                                        <input id="save_id" name="save_id" fw-filter=""
-                                            fw-label="아이디 저장" fw-msg="" value="T" type="checkbox">
-                                        </input>
+                                        <input id="save_id" name="save_id" value="T" type="checkbox">
                                         <label for="save_id">
                                             아이디 저장
                                         </label>

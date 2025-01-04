@@ -58,18 +58,28 @@ body {
     text-rendering: optimizeLegibility;
 }
 @media (max-width: 1440px) {
-    #login_contents.login-wrapper .login-data {
+    #login_contents.login-wrapper .cs_wrap {
         padding: 0 40px;
     }
 }
-#login_contents.login-wrapper .login-data {
+#login_contents.login-wrapper .cs_login {
     max-width: 440px;
     padding: 0;
 }
-#login_contents.login-wrapper .login-data {
+#login_contents.login-wrapper .cs_login {
     display: inline-block;
     vertical-align: middle;
     position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 60px;
+}
+#login_contents.login-wrapper .cs_login .id_pw_wrap {
+    padding: 0;
+}
+.id_pw_wrap {
+    display: inline-block;
+    vertical-align: middle;
     box-sizing: border-box;
     width: 100%;
     padding: 0 60px;
@@ -142,10 +152,10 @@ input:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 포커스 시 그림자 효과 */
     outline: none; /* 포커스 아웃라인 제거 */
 }
-#login_contents.login-wrapper .login-data .xans-member-login {
+#login_contents.login-wrapper .cs_login .xans-member-login {
     margin-top: 0;
 }
-#login_contents.login-wrapper .login-data .login {
+#login_contents.login-wrapper .cs_login .login {
     margin: 0;
     padding: 0;
 }
@@ -153,7 +163,7 @@ input:focus {
     padding: 49px 39px;
     color: #2e2e2e;
 }
-#login_contents.login-wrapper .login-data fieldset {
+#login_contents.login-wrapper .cs_login fieldset {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -170,17 +180,35 @@ img, fieldset {
     vertical-align: top;
 }
 fieldset {
-    display: block;
-    min-inline-size: min-content;
-    margin-inline: 2px;
-    border-width: 2px;
-    border-style: groove;
-    border-color: threedface;
-    border-image: initial;
-    padding-block: 0.35em 0.625em;
-    padding-inline: 0.75em;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
-#login_contents.login-wrapper .login-data .touch_login {
+
+#login_contents {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#login_contents.login-wrapper .cs_login .xans-member-login {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+legend {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+legend {
+    display: none;
+}
+#login_contents.login-wrapper .cs_login .touch_login {
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
@@ -204,10 +232,10 @@ ul {
     padding-inline-start: 40px;
     unicode-bidi: isolate;
 }
-#login_contents.login-wrapper .login-data .touch_login li:first-child {
+#login_contents.login-wrapper .cs_login .touch_login li:first-child {
     padding-right: 5px;
 }
-#login_contents.login-wrapper .login-data .touch_login li {
+#login_contents.login-wrapper .cs_login .touch_login li {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -228,12 +256,12 @@ li {
     text-align: -webkit-match-parent;
     unicode-bidi: isolate;
 }
-#login_contents.login-wrapper .login-data .touch_login li.on a {
+#login_contents.login-wrapper .cs_login .touch_login li.color_on a {
     background: #151311;
     font-weight: 700;
     color: #fff;
 }
-#login_contents.login-wrapper .login-data .touch_login li a {
+#login_contents.login-wrapper .cs_login .touch_login li a {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -265,7 +293,7 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: underline;
 }
-#login_contents.login-wrapper .login-data label {
+#login_contents.login-wrapper .cs_login label {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -302,7 +330,7 @@ label > span.label {
     letter-spacing: -0.5px;
     text-align: left;
 }
-#login_contents.login-wrapper .login-data input[type=text], #contents.c_sub .cs_member input[type=password] {
+#login_contents.login-wrapper .cs_login input[type=text], #contents.c_sub .cs_member input[type=password] {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -372,7 +400,7 @@ input[type="text" i] {
 }
 input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
 }
-#login_contents.login-wrapper .login-data label {
+#login_contents.login-wrapper .cs_login label {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -387,13 +415,13 @@ input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" 
     border-radius: 2px;
     color: #8F8F91;
 }
-#login_contents.login-wrapper .login-data .xans-member-login label + label {
+#login_contents.login-wrapper .cs_login .xans-member-login label + label {
     margin-top: 30px;
 }
-#login_contents.login-wrapper .login-data label + label {
+#login_contents.login-wrapper .cs_login label + label {
     margin-top: 10px;
 }
-#login_contents.login-wrapper .login-data label {
+#login_contents.login-wrapper .cs_login label {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -415,7 +443,7 @@ input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" 
     padding: 0 0 0 8px;
     color: #c9c9c9;
 }
-#login_contents.login-wrapper .login-data input[type=password] {
+#login_contents.login-wrapper .cs_login input[type=password] {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -470,7 +498,7 @@ input[type="password" i] {
     padding-block: 1px;
     padding-inline: 2px;
 }
-#login_contents.login-wrapper .login-data .login .security {
+#login_contents.login-wrapper .cs_login .login .security {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
@@ -483,7 +511,7 @@ input[type="password" i] {
     margin: 10px 0;
     color: #757575;
 }
-#login_contents.login-wrapper .login-data .save_id {
+#login_contents.login-wrapper .cs_login .save_id {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -493,46 +521,42 @@ input[type="password" i] {
     color: #151311;
     line-height: 50px;
 }
-#login_contents.login-wrapper .login-data .save_id input {
+#login_contents.login-wrapper .cs_login .save_id input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 0; /* 기본 체크박스 숨김 */
+}
+
+#login_contents.login-wrapper .cs_login .save_id label:before {
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    opacity: 0;
-}
-input[type=checkbox] {
-    position: relative;
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-    border: #151311 solid 1px;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    border: 1px solid #151311;
     border-radius: 2px;
-    background: #fff;
-    appearance: none;
-    cursor: pointer;
+    background-color: #fff;
 }
 
-input[type=radio], input[type=checkbox] {
-    width: 13px;
-    height: 13px;
-    border: 0;
+#login_contents.login-wrapper .cs_login .save_id input:checked + label:before {
+    background-color: #151311;
 }
-input[type=checkbox]:after {
-    content: "";
+
+#login_contents.login-wrapper .cs_login .save_id input:checked + label:after {
+    content: "✔"; /* 체크 표시 */
     position: absolute;
-    left: 3.5px;
+    left: 4px;
     top: 50%;
-    width: 8px;
-    height: 5px;
-    margin-top: -6px;
-    border-left: transparent solid 3px;
-    border-bottom: transparent solid 3px;
-    transform: rotate(-45deg);
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
 }
-#login_contents.login-wrapper .login-data .save_id label {
+#login_contents.login-wrapper .cs_login .save_id label {
     display: inline-block;
     position: relative;
     padding-left: 30px;
@@ -540,7 +564,7 @@ input[type=checkbox]:after {
     text-align: left;
     cursor: pointer;
 }
-#login_contents.login-wrapper .login-data label {
+#login_contents.login-wrapper .cs_login label {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -562,7 +586,7 @@ input[type=checkbox] + label {
 input[type=radio] + label, input[type=checkbox] + label {
     margin: 0 4px 0 2px;
 }
-#login_contents.login-wrapper .login-data .save_id label:before {
+#login_contents.login-wrapper .cs_login .save_id label:before {
     content: "";
     position: absolute;
     left: 0;
@@ -574,12 +598,18 @@ input[type=radio] + label, input[type=checkbox] + label {
     border-radius: 2px;
     background-color: #fff;
 }
-#login_contents.login-wrapper .login-data .login .find_id_pw {
+#login_contents.login-wrapper .cs_login .login .find_id_pw {
     display: inline-block;
     vertical-align: middle;
     float: right;
     padding: 0;
     width: auto;
+}
+.xans-member-login .login fieldset ul {
+    overflow: hidden;
+    padding: 20px 55px 5px;
+    margin: 0;
+    border: 0;
 }
 ul {
     display: block;
@@ -591,10 +621,10 @@ ul {
     padding-inline-start: 40px;
     unicode-bidi: isolate;
 }
-#login_contents.login-wrapper .login-data .login .find_id_pw li:first-child {
+#login_contents.login-wrapper .cs_login .login .find_id_pw li:first-child {
     padding-left: 0;
 }
-#login_contents.login-wrapper .login-data .login .find_id_pw li {
+#login_contents.login-wrapper .cs_login .login .find_id_pw li {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -602,7 +632,7 @@ ul {
     width: auto;
     padding: 0 20px;
 }
-#login_contents.login-wrapper .login-data .login .find_id_pw li a {
+#login_contents.login-wrapper .cs_login .login .find_id_pw li a {
     font-size: 15px;
     font-weight: 700;
     color: #151311;
@@ -612,7 +642,7 @@ ul {
 .xans-member-login .login fieldset li a {
     color: #2e2e2e;
 }
-#login_contents.login-wrapper .login-data .login .find_id_pw li:before {
+#login_contents.login-wrapper .cs_login .login .find_id_pw li:before {
     content: "";
     position: absolute;
     left: 0;
@@ -622,7 +652,11 @@ ul {
     margin-top: -6px;
     background-color: #151311;
 }
-#login_contents.login-wrapper .login-data .login fieldset > a {
+#contents.c_sub .cs_member .login .cs_find li:last-child {
+    padding-right: 0;
+}
+
+#login_contents.login-wrapper .cs_login .login fieldset > a {
     display: inline-block;
     position: relative;
     left: auto;
@@ -666,10 +700,10 @@ a:link, a:visited {
     line-height: 38px;
     text-align: center;
 }
-#login_contents.login-wrapper .login-data .xans-member-login {
+#login_contents.login-wrapper .cs_login .xans-member-login {
     margin-top: 0;
 }
-#login_contents.login-wrapper .login-data .sns_login_main {
+#login_contents.login-wrapper .cs_login .sns_login_main {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -696,6 +730,7 @@ a:link, a:visited {
     letter-spacing: -0.5px;
     text-align: center;
 }
+
 #login_contents.login-wrapper .hr_line:before {
     content: "";
     position: absolute;
@@ -713,11 +748,11 @@ a:link, a:visited {
     padding: 0 15px;
     background-color: #fff;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li.kakao_login a {
+#login_contents.login-wrapper .cs_login .sns_login_main li.kakao_login a {
     background-color: #fee500;
 }
 
-#login_contents.login-wrapper .login-data .sns_login_main li a {
+#login_contents.login-wrapper .cs_login .sns_login_main li a {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -735,26 +770,26 @@ a {
     text-decoration: none;
     color: #000;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li.kakao_login i {
+#login_contents.login-wrapper .cs_login .sns_login_main li.kakao_login i {
     float: left;
     width: 50px;
     margin-left: 0;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li i {
+#login_contents.login-wrapper .cs_login .sns_login_main li i {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     width: 100%;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li.kakao_login i img {
+#login_contents.login-wrapper .cs_login .sns_login_main li.kakao_login i img {
     width: 40px;
     margin: 5px;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li i img {
+#login_contents.login-wrapper .cs_login .sns_login_main li i img {
     width: 100%;
     height: auto;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li.kakao_login span {
+#login_contents.login-wrapper .cs_login .sns_login_main li.kakao_login span {
     display: inline-block;
     vertical-align: middle;
     float: left;
@@ -776,6 +811,6 @@ a {
     line-height: 0;
     text-indent: -9999px;
 }
-#login_contents.login-wrapper .login-data .sns_login_main li.naver_login a {
+#login_contents.login-wrapper .cs_login .sns_login_main li.naver_login a {
     background-color: #29b500;
 }
