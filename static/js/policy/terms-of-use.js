@@ -18,6 +18,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-privacy-policy
-terms-of-use
