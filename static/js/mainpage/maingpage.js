@@ -84,3 +84,41 @@ document.addEventListener('DOMContentLoaded', () => {
     moveToSlide(currentIndex);
     startAutoSlide();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const ulElement = document.querySelector(".hot-recommand-restaurant .section ul");
+    const prevButton = document.querySelector(".swiper-button-prev");
+    const nextButton = document.querySelector(".swiper-button-next");
+    const itemWidth = 922; // Adjusted for screen width
+    let currentTranslate = 0;
+    const maxTranslate = -((ulElement.children.length - 2) * itemWidth); // Two items visible
+
+    function updateTranslate() {
+        ulElement.style.transform = `translate3d(${currentTranslate}px, 0, 0)`;
+    }
+
+    prevButton.addEventListener("click", function () {
+        if (currentTranslate < 0) {
+            currentTranslate += itemWidth;
+            updateTranslate();
+        }
+    });
+
+    nextButton.addEventListener("click", function () {
+        if (currentTranslate > maxTranslate) {
+            currentTranslate -= itemWidth;
+            updateTranslate();
+        }
+    });
+
+    // Adjust layout dynamically on window resize
+    window.addEventListener("resize", function () {
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 1400) {
+            ulElement.style.width = "922px";
+        } else {
+            ulElement.style.width = "3206px";
+        }
+    });
+});
