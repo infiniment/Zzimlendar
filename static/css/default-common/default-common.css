@@ -28,6 +28,11 @@ html {
     color: #008bcc;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .zzim-menu .sub-category ul {
     position: relative;
 }

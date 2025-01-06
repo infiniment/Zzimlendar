@@ -1,0 +1,380 @@
+#policy-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1260px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#aside {
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#aside.on {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#aside.on.open {
+    overflow: visible;
+}
+
+#aside > ul {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 60px;
+}
+
+#aside > ul li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#aside .a-kakao {
+    display: inline-block;
+    position: relative;
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-color: #fae100;
+    cursor: pointer;
+}
+
+#aside .a-kakao::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_sns_kakao.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: 0.3s;
+}
+
+.blind {
+    display: block;
+    overflow: hidden;
+    position: absolute !important;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+#aside .a-top {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-color: #151311;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#aside > ul li a, #aside > ul li button {
+    vertical-align: middle;
+}
+
+button {
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+#aside .a-top::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_arrow_white.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transform: rotate(-45deg);
+    transition: 0.3s ease-in-out;
+}
+
+
+#aside .a-top:hover::before {
+    margin-top: -11px;
+}
+
+
+#contents {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 80px;
+    padding: 60px 0 160px;
+    background-color: #fff;
+}
+
+#contents .policy-sub .path {
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    zoom: 1;
+}
+
+#contents .policy-sub > .path {
+    display: none;
+    vertical-align: middle;
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1680px;
+    padding: 0 40px;
+    z-index: inherit;
+}
+
+#contents .policy-sub .path span {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    text-indent: 100%;
+}
+
+#contents .policy-sub .path ol {
+    float: left;
+}
+
+#contents .policy-sub .path li:first-child {
+    padding-left: 0;
+}
+
+#contents .policy-sub .path li {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0 25px;
+    background: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #151311;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+#contents .policy-sub .path li:first-child a {
+    font-weight: 700;
+}
+
+#contents .policy-sub .path li a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #151311;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+}
+
+strong, b {
+    font-weight: normal;
+}
+
+#contents .policy-sub > .path + .inner-wrapper {
+    min-height: 650px;
+}
+
+#contents.policy-sub .inner-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    box-sizing: border-box;
+    width: 97%;
+}
+
+#contents.policy-sub .contents-head {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#contents.policy-sub .contents-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+#contents.policy-sub .contents-title strong {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    font-size: 60px;
+    font-weight: 700;
+    color: #151311;
+    line-height: 80px;
+    letter-spacing: -3px;
+}
+
+#contents.policy-sub .contents-term {
+    padding: 35px 40px;
+    text-align: left;
+    color: #151311;
+    font-size: 15px;
+    line-height: 25px;
+    word-break: keep-all;
+}
+
+.linebox {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.linebox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 30px;
+    border-left: #151311 solid 1px;
+    border-right: #151311 solid 1px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.free-view {
+    word-wrap: break-word;
+}
+
+.free-view blockquote:not([class]), .free-view h4:not([class]), .free-view ol:not([class]), .free-view p:not([class]), .free-view ul:not([class]) {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.free-view blockquote:not([class]), .free-view div:not([class]), .free-view h1:not([class]), .free-view h2:not([class]), .free-view h3:not([class]), .free-view h4:not([class]), .free-view h5:not([class]), .free-view h6:not([class]), .free-view hr:not([class]), .free-view ol:not([class]), .free-view p:not([class]), .free-view pre:not([class]), .free-view ul:not([class]) {
+    display: block;
+}
+
+.free-view table:not([class]) {
+    border-spacing: 2px;
+    display: table;
+}
+
+.free-view tbody:not([class]), .free-view tfoot:not([class]), .free-view thead:not([class]) {
+    vertical-align: middle;
+}
+
+.free-view thead:not([class]) {
+    display: table-header-group;
+}
+
+.free-view td:not([class]), .free-view th:not([class]), .free-view tr:not([class]) {
+    vertical-align: inherit;
+}
+
+.free-view tr:not([class]) {
+    display: table-row;
+}
+
+.free-view th:not([class]) {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.free-view td:not([class]), .free-view th:not([class]) {
+    display: table-cell;
+}
+
+.free-view table th {
+    background: #ececec;
+}
+
+.free-view table {
+    border: none;
+    empty-cells: show;
+    max-width: 100%;
+}
+
+.free-view tbody:not([class]) {
+    display: table-row-group;
+}
+
+.free-view tr:not([class]) {
+    display: table-row;
+}
+
+.free-view table td {
+    min-width: 5px;
+}
+
+.free-view::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.base-button {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+
+.linebox::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    border-top: #151311 solid 1px;
+    border-bottom: #151311 solid 1px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#contents.policy-sub .inner-wrapper {
+    padding: 0 40px;
+}
