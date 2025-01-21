@@ -1,3 +1,5 @@
+// 첫번째 슬라이더
+
 document.addEventListener('DOMContentLoaded', () => {
     const stage = document.querySelector('.stage');
     const slides = Array.from(document.querySelectorAll('.stage-item'));
@@ -41,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dot.classList.toggle('active', idx === (currentIndex - 1 + totalSlides) % totalSlides);
         });
 
-        // 전환 완료 후 처리
         setTimeout(() => {
             isTransitioning = false;
             if (currentIndex === 0) {
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAutoSlide() {
         setInterval(() => {
             moveToSlide(currentIndex + 1);
-        }, transitionTime + 2000); // 전환 시간 + 약간의 딜레이
+        }, transitionTime + 4100); // 전환 시간 + 약간의 딜레이
     }
 
     // 이전 버튼 클릭 이벤트
@@ -85,40 +86,117 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoSlide();
 });
 
+// 두번째 슬라이더더
+document.addEventListener("DOMContentLoaded", () => {
+    const swiperWrapper = document.querySelector(".swiper-wrapper");
+    const slides = document.querySelectorAll(".swiper-slide");
+    const pagination = document.querySelectorAll(".swiper-pagination-switch");
+    const slideWidthLarge = 1380; // 큰 화면 기준
+    const slideWidthSmall = 922; // 작은 화면 기준
+    const totalSlides = 5; // pagination에 표시할 총 슬라이드 수 (2번째 ~ 6번째 ul)
+    let currentSlide = 1; // 2번째 ul부터 시작
+    let slideWidth = window.innerWidth <= 1400 ? slideWidthSmall : slideWidthLarge;
+    let autoSlideInterval;
 
-document.addEventListener("DOMContentLoaded", function () {
-    const ulElement = document.querySelector(".hot-recommand-restaurant .section ul");
-    const prevButton = document.querySelector(".swiper-button-prev");
-    const nextButton = document.querySelector(".swiper-button-next");
-    const itemWidth = 922; // Adjusted for screen width
-    let currentTranslate = 0;
-    const maxTranslate = -((ulElement.children.length - 2) * itemWidth); // Two items visible
+    // 슬라이더 초기화
+    const initializeSlider = () => {
+        slideWidth = window.innerWidth <= 1400 ? slideWidthSmall : slideWidthLarge;
+        swiperWrapper.style.width = `${slideWidth * slides.length}px`;
+        swiperWrapper.style.transform = `translate3d(${-currentSlide * slideWidth}px, 0, 0)`;
+        swiperWrapper.style.transition = "none";
 
-    function updateTranslate() {
-        ulElement.style.transform = `translate3d(${currentTranslate}px, 0, 0)`;
-    }
+        slides.forEach(slide => {
+            slide.style.width = `${slideWidth}px`;
+        });
+        updatePagination();
+        startAutoSlide();
+    };
 
-    prevButton.addEventListener("click", function () {
-        if (currentTranslate < 0) {
-            currentTranslate += itemWidth;
-            updateTranslate();
-        }
+    // 슬라이드 위치 업데이트
+    const updateSlider = (instant = false) => {
+        const translateValue = -currentSlide * slideWidth;
+        swiperWrapper.style.transition = instant ? "none" : "transform 0.5s ease-in-out";
+        swiperWrapper.style.transform = `translate3d(${translateValue}px, 0, 0)`;
+    };
+
+    // Pagination 업데이트
+    const updatePagination = () => {
+        pagination.forEach((dot, index) => {
+            if (index === (currentSlide - 1) % totalSlides) {
+                dot.classList.add("swiper-active-switch");
+            } else {
+                dot.classList.remove("swiper-active-switch");
+            }
+        });
+    };
+
+    // Pagination 클릭 이벤트 추가
+    pagination.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            clearInterval(autoSlideInterval);
+            currentSlide = index + 1; // 해당 슬라이드로 이동
+            updateSlider();
+            updatePagination();
+            startAutoSlide();
+        });
     });
 
-    nextButton.addEventListener("click", function () {
-        if (currentTranslate > maxTranslate) {
-            currentTranslate -= itemWidth;
-            updateTranslate();
-        }
-    });
-
-    // Adjust layout dynamically on window resize
-    window.addEventListener("resize", function () {
-        const screenWidth = window.innerWidth;
-        if (screenWidth <= 1400) {
-            ulElement.style.width = "922px";
+    // 자동 슬라이드
+    const autoSlide = () => {
+        currentSlide++;
+        if (currentSlide >= slides.length - 1) {
+            updateSlider();
+            setTimeout(() => {
+                currentSlide = 1; // 2번째 ul로 이동
+                updateSlider(true);
+            }, 500);
         } else {
-            ulElement.style.width = "3206px";
+            updateSlider();
         }
+        updatePagination();
+    };
+
+    // 이전 슬라이드
+    const prevSlide = () => {
+        currentSlide--;
+        if (currentSlide < 0) {
+            updateSlider();
+            setTimeout(() => {
+                currentSlide = slides.length - 2; // 마지막 슬라이드로 이동
+                updateSlider(true);
+            }, 500);
+        } else {
+            updateSlider();
+        }
+        updatePagination();
+    };
+
+    // 다음 슬라이드
+    const nextSlide = () => {
+        autoSlide();
+    };
+
+    // 자동 슬라이드 시작
+    const startAutoSlide = () => {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(autoSlide, 5500);
+    };
+
+    // 창 크기 변경 시 슬라이더 초기화
+    window.addEventListener("resize", initializeSlider);
+
+    // 버튼 이벤트 추가
+    document.querySelector(".swiper-button-prev").addEventListener("click", () => {
+        clearInterval(autoSlideInterval);
+        prevSlide();
+        startAutoSlide();
     });
+    document.querySelector(".swiper-button-next").addEventListener("click", () => {
+        clearInterval(autoSlideInterval);
+        nextSlide();
+        startAutoSlide();
+    });
+
+    // 초기화
+    initializeSlider();
 });
