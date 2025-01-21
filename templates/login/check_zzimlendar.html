@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜린더</title>
+    <link rel="stylesheet" href="/static/css/default-common/default-common.css">
+    <link rel="stylesheet" href="/static/css/login/check_zzimalendar.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" data-ez="contents-1ipi7v6-1">
+
+
+
+        </header>
+
+
+
+        <div class="check-wrapper" id="check_contents">
+            <div class="cs_wrap cs_check noCheck">
+                <div class="title t3 bold mn60 p10 center">
+                    <h2 class="center"> LOGIN</h2>
+                </div>
+                <div class="check_wrap">
+                    <form id="check_form" name="member_form" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
+                        <!-- action에 폼 데이터를 처리할 서버의 URL을 지정해야함. -->
+                        <div class = "xans-element- xans-myshop xans-myshop-orderhistorynologin login ">
+                        <div class="login">
+                                <ul class="touch_login">
+                                    <li>
+                                        <a href="/templates/login/main_login.html"> <!-- 로그인 버튼을 누른 경우 가게 될 주소 -->
+                                            <span>로그인</span>
+                                        </a>
+                                    </li>
+                                    <li class="color_on">
+                                        <a href="#"> <!-- 찜린더 조회를 누른 경우 가게 될 주소 -->
+                                            <span>찜린더 조회</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <label class="input_name" title="이름 입력">
+                                    <span class="label" style>NAME</span>
+                                    <input id="name" name="name" class="inputTypeText" placeholder="주문자 성함을 입력해주세요" value type="text">
+                                </label>
+                                <label class="input_order_num" title="예약번호 입력">
+                                    <span class="label">ORDER NO.</span>
+                                <input id="order_num" name="order_num" maxlength="18" type="text" placeholder="예약번호를 입력해주세요">
+                                </label>
+                                <label class="input_pw" title="비밀번호 입력">
+                                    <span class="label">PASSWORD</span>
+                                <input id="order_pw" name="order_pw" type="password" placeholder="비밀번호를 입력해주세요">
+                                </label>
+                                <input class="btn big t1" type="submit" value="OK" style="cursor:pointer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
