@@ -3,9 +3,797 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/default-common/default-common.css">
+    <link rel="stylesheet" href="/static/css/mainpage/mainpage.css">
+    <!-- script 부분 -->
+    <script src="/static/js/mainpage/maingpage.js"></script>
+    <title>찜린더</title>
 </head>
 <body id="main">
-    
+    <div id="main-wrapper">
+        <div id="main-contents" class="contents-main">
+            <div class="wrap">
+                <div class="common-title">
+                    <img src="/static/image/mainpage/title.png"> <!--페인페이지 제목 이미지 들어가야됨-->
+                </div>
+                <div class="common-hero auto">
+                    <div class="common-space">
+                        <i class="a">
+                            <i class="b">
+                                <i class="c">
+
+                                </i>
+                            </i>
+                        </i>
+                    </div>
+                    <div class="common-slide carousel loaded drag">
+                        <div class="stage-outer"> <!--메인 페이지에서 슬라이더-->
+                            <div class="stage" style="transition: 1.4s; width: 9569px; transform: translate3d(-3189px, 0px, 0px);">
+                                <div class="stage-item cloned" style="width: 1594.67px;"> <!--cloned에서 active center로 클래스가 바뀌면서 이 컨텐츠가 나타남남-->
+                                    <div class="item">
+                                        <div class="common-text"> 
+                                            <h3>MONTHLY ZZIMLENDAR</h3>
+                                            <p> 찜린더 이달의 최고의 맛집으로 선정된<br> <strong>한성 맛집</strong></p>
+                                        </div>
+                                        <div class="common-picture"> <!--누르면 그 페이지로 이동하게 하는 a태그가 있음-->
+                                            <a href="">
+                                                <img src="/static/image/mainpage/1.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stage-item cloned" style="width: 1594.67px;">
+                                    <div class="item">
+                                        <div class="common-text">
+                                            <h3>MONTHLY BEST REVIEW RESTAURANT</h3>
+                                            <p> 이달의 리뷰 1등으로 선정된 <br><strong>준호 레스토랑</strong></p>
+                                        </div>
+                                        <div class="coomon-picture"> <!--누르면 그 페이지로 이동하게 하는 a태그가 있음-->
+                                            <a href="">
+                                                <img src="/static/image/mainpage/2.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stage-item cloned"style="width: 1594.67px;">
+                                    <div class="item">
+                                        <div class="common-text">
+                                            <h3>ZZIM COMMAND</h3>
+                                            <p> 찜린더 추천하는 이달의 맛집 <br><strong>상우포차</strong></p>
+                                        </div>
+                                        <div class="coomon-picture"> <!--누르면 그 페이지로 이동하게 하는 a태그가 있음-->
+                                            <a href="">
+                                                <img src="/static/image/mainpage/3.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stage-item cloned" style="width: 1594.67px;">
+                                    <div class="item">
+                                        <div class="common-text">
+                                            <h3>ZZIM TODAY</h3>
+                                            <p> 오늘 알아볼 맛집<br> <strong>규게업</strong></p>
+                                        </div>
+                                        <div class="coomon-picture"> <!--누르면 그 페이지로 이동하게 하는 a태그가 있음-->
+                                            <a href="">
+                                                <img src="/static/image/mainpage/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stage-item cloned" style="width: 1594.67px;">
+                                    <div class="item">
+                                        <div class="common-text">
+                                            <h3>ZZIM NEWS</h3>
+                                            <p> 찜뉴스 <br><strong>뉴스 맛집</strong></p>
+                                        </div>
+                                        <div class="coomon-picture"> <!--누르면 그 페이지로 이동하게 하는 a태그가 있음-->
+                                            <a href="">
+                                                <img src="/static/image/mainpage/5.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-btn">
+                            <button type="button" role="presentation" class="slide-prev-btn"><span aria-label="Previous"></span></button>
+                            <button type="button" role="presentation" class="slide-next-btn"><span aria-label="Next"></span></button>
+                        </div>
+                        <div class="slide-dots">
+                            <button role="button" class="slide-dot"><span></span></button> <!--active 클래스 만들어짐-->
+                            <button role="button" class="slide-dot"><span></span></button>
+                            <button role="button" class="slide-dot"><span></span></button>
+                            <button role="button" class="slide-dot"><span></span></button>
+                            <button role="button" class="slide-dot"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="min-height: 0px !important; height: auto !important;">
+                <div class="recommand-wrapper">
+                    <div class="hot-recommand-restaurant">
+                        <div class="section">
+                            <h3>당신을 위한 이 지역 HOT 매장 추천</h3>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper" style="width: 9660px; height: 492px; transition-duration: 0.5s; transform: translate3d(-1380px, 0px, 0px);">
+                                    <ul class="swiper-slide swiper-slide-duplicate" style="width: 1380px; height: 492px;"> <!--3206px만큼 변화됨 if 1400px이하로 줄어들 때-->
+                                        <!--translate3d는 922px씩 ul의 변화에 따라 바뀌는 듯듯-->
+                                        <!--ul도 1400이하면 style="width: 922px; height: 492px;"-->
+                                        <li>
+                                            <div class="content" ><a target="_blank" href="/P/1067913" ><span class="img"><img src="/static/image/mainpage/restaurant/덕후선생.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name" >덕후선생</strong><ul ><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">[NEW]피풍당 소프트쉘크랩, [NEW]향미새우, [런치한정] 산묘 저육 보자반, [런치한정] 우육 보자반, [런치한정] 홍소육보자반, 가지마감자, 과포육, 굴소스 채소 볶음, 귀신 닭, 그린빈볶음, 덕후장피, 동파육, 마라새우, 마라우육, 백산육, 북경오리 반마리, 북경오리 한마리, 사천식 조개 볶음, 소총홍소어, 신룡오이, 우육면, 유발면, 전복 조개 냉채, 진마파두부, 진저비프, 쯔란 갈비, 초마가지, 평일 생맥주 2+1, 평일런치 북경오리한마리 20%, 홍유초수</dd></dl><ul class="state_ul"><li class="icon-state01"><p>29004</p></li><li class="icon-state02"><p>9</p></li><li class="icon-state03"><p>66</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1541468"><span class="img"><img src="/static/image/mainpage/restaurant/스시히나레.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.4</em><strong class="name">스시하나레</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">0</dd></dl><ul class="state_ul"><li class="icon-state01"><p>5651</p></li><li class="icon-state02"><p>0</p></li><li class="icon-state03"><p>3</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/823976"><span class="img"><img src="/static/image/mainpage/restaurant/꿰뚫.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name" >꿰뚫</strong><ul ><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">, 꿰뚫 디너 부티크 코스, 런치 꿰뚫 특선</dd></dl><ul class="state_ul"><li class="icon-state01"><p>17358</p></li><li class="icon-state02"><p>8</p></li><li class="icon-state03"><p>36</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1271547"><span class="img"><img src="/static/image/mainpage/restaurant/드레스덴 그린.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">드레스덴 그린</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Signature Course, Standard (Lunch), Wine Pairing(Dinner), Wine Pairing(Lunch)</dd></dl><ul class="state_ul" ><li class="icon-state01"><p>7656</p></li><li class="icon-state02"><p>2</p></li><li class="icon-state03" ><p >8</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1541145"><span class="img"><img src="/static/image/mainpage/restaurant/그리에.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">그리에</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">GRee:E Dinner course, GRee:E Lunch course</dd></dl><ul class="state_ul"><li class="icon-state01"><p>5403</p></li><li class="icon-state02" ><p>0</p></li><li class="icon-state03"><p>4</p></li></ul></div></a></div>
+                                        </li>    
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1498156"><span class="img"><img src="/static/image/mainpage/restaurant/엘픽.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">엘픽</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">9월 시그니쳐 스테이크, 감자 밀푀유, 관자, 단새우 비스큐 파스타, 드라이에이징 Prime 티본 스테이크, 드라이에징 미경산 티본1+ 스테이크, 시그니처 밀랍 /비프팻 스테이크, 제주산 제철 생선 세비체, 테이스팅 코스</dd></dl><ul class="state_ul"><li class="icon-state01"><p>4798</p></li><li class="icon-state02"><p>2</p></li><li class="icon-state03"><p>2</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="swiper-slide" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/323"><span class="img"><img src="/static/image/mainpage/restaurant/새벽집.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">새벽집</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">간장게장, 국수전골, 꽃등심(150g), 냉면, 돼지김치찌개, 된장찌개, 따로국밥>, 멸치김치찌개, 불고기(200g), 생고기(150g), 샤브샤브(160g), 양념갈비(260g), 육회(200g), 육회비빔밥, 조랭이만두국, 콩나물 국밥, 한우 갈비탕</dd></dl><ul class="state_ul"><li class="icon-state01"><p>135370</p></li><li class="icon-state02"><p>258</p></li><li class="icon-state03"><p>274</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/350600"><span class="img"><img src="/static/image/mainpage/restaurant/밍글스.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.4</em><strong class="name" >밍글스</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">4 glasses 와인페어링, Dinner menu, Lunch menu, 시그니쳐 페어링, 전통주 페어링</dd></dl><ul class="state_ul"><li class="icon-state01"><p>84283</p></li><li class="icon-state02"><p>207</p></li><li class="icon-state03"><p>258</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/28566"><span class="img" data-reactid="322"><img src="/static/image/mainpage/restaurant/정식당.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name">정식당</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">DINNER, LUNCH</dd></dl><ul class="state_ul"><li class="icon-state01"><p>120088</p></li><li class="icon-state02"><p>176</p></li><li class="icon-state03"><p>295</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/861407"><span class="img"><img src="/static/image/mainpage/restaurant/무오키.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best" ></strong></span><div class="cnt" ><em class="score" >3.9</em><strong class="name" >무오키 MUOKI</strong><ul ><li class="area" >청담동</li></ul><dl ><dt >인기 메뉴</dt><dd class="menu" >Dinner Menu Lunch Menu</dd></dl><ul class="state_ul" ><li class="icon-state01" ><p >16982</p></li><li class="icon-state02" ><p >12</p></li><li class="icon-state03" ><p >30</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content" ><a target="_blank" href="/P/1317114"><span class="img"><img src="/static/image/mainpage/restaurant/강민철레스토랑.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name">강민철레스토랑</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">런치, 디너, 콜키지(병당)</dd></dl><ul class="state_ul"><li class="icon-state01"><p>14855</p></li><li class="icon-state02"><p>5</p></li><li class="icon-state03"><p>9</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1200936"><span class="img"><img src="/static/image/mainpage/restaurant/7th Door.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">7th Door</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Dinner course, Lunch course, Weekend Lunch course</dd></dl><ul class="state_ul"><li class="icon-state01"><p>17242</p></li><li class="icon-state02"><p>16</p></li><li class="icon-state03"><p>18</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>  <!--swiper-slide swiper-slide-visible swiper-slide-active가 추가됨 여기 클래스부터 아래 5개까지-->
+                                    <ul class="swiper-slide" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/354112"><span class="img"><img src="/static/image/mainpage/restaurant/쥬안.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name">쥬안</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">저녁 제철오마카세(룸), 저녁 제철오마카세(카운터)</dd></dl><ul class="state_ul"><li class="icon-state01"><p>37734</p></li><li class="icon-state02"><p>89</p></li><li class="icon-state03"><p>112</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/320351"><span class="img"><img src="/static/image/mainpage/restaurant/삼성원조양곱창.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">삼성원조양곱창</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">곱창, 곱창전골 대, 곱창전골 중, 막창, 볶음밥, 양곱창, 염통, 청국장, 특양</dd></dl><ul class="state_ul"><li class="icon-state01"><p>39060</p></li><li class="icon-state02"><p>67</p></li><li class="icon-state03"><p>131</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/6024"><span class="img"><img src="/static/image/mainpage/restaurant/라미띠에.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">3.9</em><strong class="name">라미띠에</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">디너메뉴, 런치메뉴</dd></dl><ul class="state_ul"><li class="icon-state01"><p>23578</p></li><li class="icon-state02"><p>45</p></li><li class="icon-state03"><p>65</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/315233"><span class="img"><img src="/static/image/mainpage/restaurant/톡톡.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.2</em><strong class="name">톡톡</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Antipasto, Main, Pasta, 디너코스, 런치코스</dd></dl><ul class="state_ul"><li class="icon-state01"><p>50215</p></li><li class="icon-state02"><p>147</p></li><li class="icon-state03"><p>220</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/5992"><span class="img"><img src="/static/image/mainpage/restaurant/비금도 청담점.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">비금도 청담점</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">비금도정식</dd></dl><ul class="state_ul"><li class="icon-state01"><p>47978</p></li><li class="icon-state02"><p>83</p></li><li class="icon-state03"><p>180</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/243995"><span class="img"><img src="/static/image/mainpage/restaurant/레스쁘아.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.3</em><strong class="name">레스쁘아</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Joyeux Dejeuner, la saison, le classique</dd></dl><ul class="state_ul"><li class="icon-state01"><p>31012</p></li><li class="icon-state02"><p>80</p></li><li class="icon-state03"><p>176</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="swiper-slide" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/349263"><span class="img"><img src="/static/image/mainpage/restaurant/미피아체.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">미 피아체</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">디너 코스, 런치코스</dd></dl><ul class="state_ul"><li class="icon-state01"><p>37434</p></li><li class="icon-state02"><p>101</p></li><li class="icon-state03"><p>164</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/368773"><span class="img"><img src="/static/image/mainpage/restaurant/파불라.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.9</em><strong class="name">파불라</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Cold_구수계, Cold_부처폐편, Cold_사천북부식 량펀, Cold_흑식초 해파리냉채, Hot_궁보수정하, Hot_라즈지, Hot_무슈 포크, Hot_비프 마라탕, Hot_사천 백고동 볶음, Hot_샹라 소프트쉘 크랩, Hot_유린기, Hot_은설어 백채찜, Hot_첨밀 꿔바로우, Hot_태백장향골, Hot_패왕 매운새우, Hot_화자오 양갈비 스테이크, Hot_흑식초 탕수육, Soup_게살탕, Soup_산라탕, Soup_전복맑은탕, [프로모션] 유기농 차나무버섯덮밥, ★대표메뉴★_사천 마라따롱샤, ★대표메뉴★_사천 마라롱샤, ★대표메뉴★_산니백육, ★대표메뉴★_서총관 비프 마라샹궈, ★대표메뉴★_서총관 해산물 마라샹궈, ★대표메뉴★_소리강 동파육, ★대표메뉴★_오보계정, ★대표메뉴★_지더우화, ★대표메뉴★_청초 농어찜</dd></dl><ul class="state_ul"><li class="icon-state01"><p>19415</p></li><li class="icon-state02"><p>27</p></li><li class="icon-state03"><p>27</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/363138"><span class="img"><img src="/static/image/mainpage/restaurant/권숙수.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.2</em><strong class="name">권숙수</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">DINNER, LUNCH</dd></dl><ul class="state_ul"><li class="icon-state01"><p>44943</p></li><li class="icon-state02"><p>131</p></li><li class="icon-state03"><p>166</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/359640"><span class="img"><img src="/static/image/mainpage/restaurant/울프강 스테이크하우스.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.3</em><strong class="name">울프강 스테이크하우스</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Classic코스 (2인 이상 이용), W 코스 (2인 이상 이용), 발베니 위스키 프로모션, 청담 런치 코스 (1인), 콜키지 비용 (Corkage Fee), 포터하우스스테이크(1000g)</dd></dl><ul class="state_ul"><li class="icon-state01"><p>41495</p></li><li class="icon-state02"><p>63</p></li><li class="icon-state03"><p>80</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/320334"><span class="img"><img src="/static/image/mainpage/restaurant/뜨락.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">뜨락</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">꽃등심(130g), 누룽지, 등심주물럭(130g), 무청솥밥과 고추물(1인 기준), 물냉면, 보리굴비와 녹차밥, 비빔냉면, 살치살(120g), 새우살(120g), 안동산 하몽, 안심 육전, 안심(130g), 안창살(120g), 야채모듬, 양곰탕, 육회, 주중 점심정식 &lt;2인&gt;, 주중 점심정식 &lt;3인&gt;, 채끝등심(130g), 통안심추리(2인분 기준)*한정판매, 통안창살(손질전100g기준)*한정판매, 특양구이(130g), 한우 소꼬리찜(700g), 한우꼬리곰탕(백탕), 한우된장찌개</dd></dl><ul class="state_ul"><li class="icon-state01"><p>29766</p></li><li class="icon-state02"><p>34</p></li><li class="icon-state03"><p>124</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/365171"><span class="img"><img src="/static/image/mainpage/restaurant/코지마.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">3.5</em><strong class="name">코지마</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Dinner Counter, Dinner Room, Lunch Counter, Lunch Room, Take Out</dd></dl><ul class="state_ul"><li class="icon-state01"><p>28432</p></li><li class="icon-state02"><p>52</p></li><li class="icon-state03"><p>39</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="swiper-slide" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/345628"><span class="img"><img src="/static/image/mainpage/restaurant/스시마츠모토.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.2</em><strong class="name">스시마츠모토</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">런치 오마카세, 디너 오마카세</dd></dl><ul class="state_ul"><li class="icon-state01"><p>21478</p></li><li class="icon-state02"><p>27</p></li><li class="icon-state03"><p>143</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/481964"><span class="img"\><img src="/static/image/mainpage/restaurant/익스퀴진.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">3.8</em><strong class="name">익스퀴진</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">저녁, 점심</dd></dl><ul class="state_ul"><li class="icon-state01"><p>21780</p></li><li class="icon-state02"><p>12</p></li><li class="icon-state03"><p>37</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/370341"><span class="img"><img src="/static/image/mainpage/restaurant/윌로뜨.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">3.9</em><strong class="name">윌로뜨</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">윌로뜨 런치코스, 윌로뜨 쉐프‘s 시그니처 디너코스, 윌로뜨 코스(런치&amp;디너)</dd></dl><ul class="state_ul"><li class="icon-state01"><p>14309</p></li><li class="icon-state02"><p>8</p></li><li class="icon-state03"><p>14</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/445004"><span class="img"><img src="/static/image/mainpage/restaurant/세야스시.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">3.7</em><strong class="name">세야스시</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">디너오마카세, 런치오마카세, 사와야 마츠모토, 자쿠 프리미엄 카이잔, 콜키지</dd></dl><ul class="state_ul"><li class="icon-state01"><p>17514</p></li><li class="icon-state02"><p>9</p></li><li class="icon-state03"><p>39</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1206606"><span class="img"><img src="/static/image/mainpage/restaurant/스시스미레.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.4</em><strong class="name">스시스미레</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">디너, 런치</dd></dl><ul class="state_ul"><li class="icon-state01"><p>23868</p></li><li class="icon-state02"><p>10</p></li><li class="icon-state03"><p>51</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1547367"><span class="img"><img src="/static/image/mainpage/restaurant/스시사이토 쥬욘.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.7</em><strong class="name">스시사이토 쥬욘</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">디너 오마카세</dd></dl><ul class="state_ul"><li class="icon-state01"><p>6141</p></li><li class="icon-state02"><p>1</p></li><li class="icon-state03"><p>0</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>
+                                    <ul class="swiper-slide" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content" ><a target="_blank" href="/P/1067913" ><span class="img"><img src="/static/image/mainpage/restaurant/덕후선생.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name" >덕후선생</strong><ul ><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">[NEW]피풍당 소프트쉘크랩, [NEW]향미새우, [런치한정] 산묘 저육 보자반, [런치한정] 우육 보자반, [런치한정] 홍소육보자반, 가지마감자, 과포육, 굴소스 채소 볶음, 귀신 닭, 그린빈볶음, 덕후장피, 동파육, 마라새우, 마라우육, 백산육, 북경오리 반마리, 북경오리 한마리, 사천식 조개 볶음, 소총홍소어, 신룡오이, 우육면, 유발면, 전복 조개 냉채, 진마파두부, 진저비프, 쯔란 갈비, 초마가지, 평일 생맥주 2+1, 평일런치 북경오리한마리 20%, 홍유초수</dd></dl><ul class="state_ul"><li class="icon-state01"><p>29004</p></li><li class="icon-state02"><p>9</p></li><li class="icon-state03"><p>66</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1541468"><span class="img"><img src="/static/image/mainpage/restaurant/스시히나레.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.4</em><strong class="name">스시하나레</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">0</dd></dl><ul class="state_ul"><li class="icon-state01"><p>5651</p></li><li class="icon-state02"><p>0</p></li><li class="icon-state03"><p>3</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/823976"><span class="img"><img src="/static/image/mainpage/restaurant/꿰뚫.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name" >꿰뚫</strong><ul ><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">, 꿰뚫 디너 부티크 코스, 런치 꿰뚫 특선</dd></dl><ul class="state_ul"><li class="icon-state01"><p>17358</p></li><li class="icon-state02"><p>8</p></li><li class="icon-state03"><p>36</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1271547"><span class="img"><img src="/static/image/mainpage/restaurant/드레스덴 그린.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">드레스덴 그린</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Signature Course, Standard (Lunch), Wine Pairing(Dinner), Wine Pairing(Lunch)</dd></dl><ul class="state_ul" ><li class="icon-state01"><p>7656</p></li><li class="icon-state02"><p>2</p></li><li class="icon-state03" ><p >8</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1541145"><span class="img"><img src="/static/image/mainpage/restaurant/그리에.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">그리에</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">GRee:E Dinner course, GRee:E Lunch course</dd></dl><ul class="state_ul"><li class="icon-state01"><p>5403</p></li><li class="icon-state02" ><p>0</p></li><li class="icon-state03"><p>4</p></li></ul></div></a></div>
+                                        </li>    
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1498156"><span class="img"><img src="/static/image/mainpage/restaurant/엘픽.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/2star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">엘픽</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">9월 시그니쳐 스테이크, 감자 밀푀유, 관자, 단새우 비스큐 파스타, 드라이에이징 Prime 티본 스테이크, 드라이에징 미경산 티본1+ 스테이크, 시그니처 밀랍 /비프팻 스테이크, 제주산 제철 생선 세비체, 테이스팅 코스</dd></dl><ul class="state_ul"><li class="icon-state01"><p>4798</p></li><li class="icon-state02"><p>2</p></li><li class="icon-state03"><p>2</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>   
+                                    <ul class="swiper-slide swiper-slide-duplicate" style="width: 1380px; height: 492px;">
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/323"><span class="img"><img src="/static/image/mainpage/restaurant/새벽집.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.0</em><strong class="name">새벽집</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">간장게장, 국수전골, 꽃등심(150g), 냉면, 돼지김치찌개, 된장찌개, 따로국밥>, 멸치김치찌개, 불고기(200g), 생고기(150g), 샤브샤브(160g), 양념갈비(260g), 육회(200g), 육회비빔밥, 조랭이만두국, 콩나물 국밥, 한우 갈비탕</dd></dl><ul class="state_ul"><li class="icon-state01"><p>135370</p></li><li class="icon-state02"><p>258</p></li><li class="icon-state03"><p>274</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/350600"><span class="img"><img src="/static/image/mainpage/restaurant/밍글스.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.4</em><strong class="name" >밍글스</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">4 glasses 와인페어링, Dinner menu, Lunch menu, 시그니쳐 페어링, 전통주 페어링</dd></dl><ul class="state_ul"><li class="icon-state01"><p>84283</p></li><li class="icon-state02"><p>207</p></li><li class="icon-state03"><p>258</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/28566"><span class="img" data-reactid="322"><img src="/static/image/mainpage/restaurant/정식당.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name">정식당</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">DINNER, LUNCH</dd></dl><ul class="state_ul"><li class="icon-state01"><p>120088</p></li><li class="icon-state02"><p>176</p></li><li class="icon-state03"><p>295</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/861407"><span class="img"><img src="/static/image/mainpage/restaurant/무오키.png" width="508" height="412" ><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best" ></strong></span><div class="cnt" ><em class="score" >3.9</em><strong class="name" >무오키 MUOKI</strong><ul ><li class="area" >청담동</li></ul><dl ><dt >인기 메뉴</dt><dd class="menu" >Dinner Menu Lunch Menu</dd></dl><ul class="state_ul" ><li class="icon-state01" ><p >16982</p></li><li class="icon-state02" ><p >12</p></li><li class="icon-state03" ><p >30</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content" ><a target="_blank" href="/P/1317114"><span class="img"><img src="/static/image/mainpage/restaurant/강민철레스토랑.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score">4.1</em><strong class="name">강민철레스토랑</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">런치, 디너, 콜키지(병당)</dd></dl><ul class="state_ul"><li class="icon-state01"><p>14855</p></li><li class="icon-state02"><p>5</p></li><li class="icon-state03"><p>9</p></li></ul></div></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><a target="_blank" href="/P/1200936"><span class="img"><img src="/static/image/mainpage/restaurant/7th Door.png" width="508" height="412"><strong class="icon-best"><img src="/static/image/mainpage/3star.png" alt="best"></strong></span><div class="cnt"><em class="score2">평가중</em><strong class="name">7th Door</strong><ul><li class="area">청담동</li></ul><dl><dt>인기 메뉴</dt><dd class="menu">Dinner course, Lunch course, Weekend Lunch course</dd></dl><ul class="state_ul"><li class="icon-state01"><p>17242</p></li><li class="icon-state02"><p>16</p></li><li class="icon-state03"><p>18</p></li></ul></div></a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><!--첫번째 안 감-->
+                            <span class="swiper-pagination-switch"></span><!--swiper-visible-switch swiper-active-switch 여기서부터 이게 추가됨-->
+                            <span class="swiper-pagination-switch"></span>
+                            <span class="swiper-pagination-switch"></span>
+                            <span class="swiper-pagination-switch"></span>
+                        </div>
+                        <div class="swiper-button-prev" style="display: none;"></div>
+                        <div class="swiper-button-next" style="display: none;"></div>
+                    </div>
+                    <div class="taste-story">
+                        <div class="section">
+                            <h3>지역 인기맛집</h3>
+                            <ul>
+                                <li>
+                                    <div class="area-content">
+                                        <a href=""> <!--해당 음식점의 상세 페이지로 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/restaurant/보길.jpg" width="440" height="440">
+                                            </span>
+                                            <div class="story-content">
+                                                <dl>
+                                                    <dt>놓치면 후회할 <br>맞춤형 카이센동 '보길'</dt>
+                                                    <dd>송파의 핫플, 송리단길에서 맛볼 수 있는 카이센동! 싱싱한 해산물이 가득 담긴 비주얼이 남다르며  매장은 전체적으로 깔끔 아늑</dd>
+                                                </dl>
+                                                <div class="editBy">
+                                                    <span class="photo">
+                                                        <img src="/static/image/mainpage/작성자사진.jpg" width="49" height="48"> <!--작성자의 이미지-->
+                                                    </span>
+                                                    <div class="writer">
+                                                        <span>Edit by 
+                                                            <strong>규게업</strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="area-content">
+                                        <a href=""> <!--해당 음식점의 상세 페이지로 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/restaurant/간장게장.jpg" width="440" height="440">
+                                            </span>
+                                            <div class="story-content">
+                                                <dl>
+                                                    <dt>공깃밥 두 그릇은 기본,<br>간장게장 맛집 Best 4</dt>
+                                                    <dd>최근들어 가장 맛있게 먹은 간장게장 맛집으로, 인천에 숨어있는 곳입니다. 안타깝게도 사장님 연세가 있으셔서 앞으로 3년 밖에 </dd>
+                                                </dl>
+                                                <div class="editBy">
+                                                    <span class="photo">
+                                                        <img src="/static/image/mainpage/작성자사진.jpg" width="49" height="48">
+                                                    </span>
+                                                    <div class="writer">
+                                                        <span>Edit by <strong>구민</strong></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="area-content">
+                                        <a href=""> <!--해당 음식점의 상세 페이지로 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/restaurant/조약돌.jpg" width="440" height="440">
+                                            </span>
+                                            <div class="story-content">
+                                                <dl>
+                                                    <dt>일본식 안주가 맛있는<br>신사 가로수길 와인 사케바</dt>
+                                                    <dd>오늘 소개해 드릴 식당은 가볍게 먹기 좋은 맛있는 안주에, 다양한 와인과 사케를 즐길 수 있는 신사 가로수길 [유희]입니다. </dd>
+                                                </dl>
+                                                <div class="editBy">
+                                                    <span class="photo">
+                                                        <img src="/static/image/mainpage/작성자사진.jpg" width="49" height="48">
+                                                    </span>
+                                                    <div class="writer">
+                                                        <span>Edit by <strong>준준호호</strong></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a> 
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="btn-more"></a><!--누르면 테마 페이지쪽에서 지역 맛집 부분 보여지게-->
+                        </div>
+                    </div>
+                    <div class="recommand-taste-thema">
+                        <div class="section">
+                            <h3>최신 Trend 맛집 테마</h3>
+                            <ul>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/생방송이미지.png" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/낙지 해물탕.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="trend-content">
+                                        <a href=""> <!--방송 맛집 페이지 이동-->
+                                            <span class="img">
+                                                <img src="/static/image/mainpage/trend-theme/칼국수.jpg" alt="">
+                                            </span>
+                                            <div class="theme-content">
+                                                <div class="theme-title">
+                                                    <p>
+                                                        생방송투데이x식신
+                                                        <br>
+                                                        빅데이터 맛집-콩나물국밥
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-show-more"><span>더보기</span></a> <!--더보기를 누르면 li가 23개가 추가되는데 왜 23개지 24개가 아니라?-->
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
 </body>
 </html>

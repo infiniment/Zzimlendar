@@ -61,7 +61,7 @@ a {
 .zzimlendar-span {
     display: block;
     overflow: hidden;
-    position: absolute !important;
+    position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
@@ -102,6 +102,17 @@ a {
     vertical-align: middle;
     float: left;
     margin-left: 30px;
+}
+
+#header .searchopen {
+    background-color: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+#header.on, #header.searchopen {
+    margin-top: 0;
+    transition: margin-top 0.3s ease-in-out; /* 부드러운 전환 효과 */
 }
 
 li {
@@ -221,13 +232,189 @@ button {
     letter-spacing: 0;
 }
 
+#header.searchopen + .search-info {
+    margin-top: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#header.searchopen + .search-info #search-bar-form {
+    margin-top: 79px;
+}
+
+.search-info {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(21, 19, 17, 0.8); /* 반투명 배경 */
+    opacity: 0; /* 기본적으로 투명 */
+    pointer-events: none; /* 기본적으로 클릭 불가 */
+    transform: translateY(-100%); /* 화면 위로 숨김 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0); /* 기본 상태의 그림자 */
+    transition: 
+        opacity 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out; /* 애니메이션 효과 추가 */
+}
 
 
+
+.search-info.visible {
+    opacity: 1; /* 완전 불투명 */
+    pointer-events: auto; /* 클릭 가능 상태 */
+    transform: translateY(0); /* 화면 안으로 이동 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* 활성 상태에서 그림자 추가 */
+}
+
+
+.search-info #search-bar-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.search-info #search-bar-form .search-header {
+    float: none;
+    margin: 0;
+}
+
+.search-info #search-bar-form .search-wrapper {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+
+.search-info #search-bar-form .search-wrapper fieldset {
+    display: inline-block;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+legend {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.search-info #search-bar-form .search-box {
+    display: inline-block;
+    position: relative;
+    width: 510px;
+    margin-top: 80px;
+}
+
+.search-info #search-bar-form .search-box .search-form {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+
+.search-info #search-bar-form .search-box .search-form > input:focus {
+    border: none; /* 기본 보더 제거 */
+    border-bottom: #151311 solid 2px; /* 하단에만 2px 보더 표시 */
+    outline: none; /* 기본 포커스 아웃라인 제거 */
+    border-radius: 0; /* 모서리를 둥글게 하지 않음 */
+}
+.searchinfo #search-bar-form .search-box .search-form > input::placeholder {
+    font-size: 18px;
+    color: #151311;
+}
+
+.search-info #search-bar-form .search-box .search-form > input {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    padding-right: 50px;
+    border: none; /* 기본 보더 제거 */
+    border-bottom: #151311 solid 1px; /* 기본 상태의 하단 보더 */
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    color: #151311;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+}
+
+.search-header #keyword {
+    background: #fff;
+}
+
+.search-info #search-bar-form .search-box .search-form .search-icon-btn {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width: 44px;
+    height: 44px;
+    right: -30px;
+    top: 30px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-info #search-bar-form .search-box .search-form .search-icon-btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    margin-left: -22px;
+    margin-top: -22px;
+    background-image: url(//brownhaus.co.kr/images/icon_top.svg);
+    background-size: 200% auto;
+    background-position: left -132px;
+}
+
+
+.search-header fieldset .autoDrop {
+    display: none;
+    border: 1px solid #565960;
+    position: absolute;
+    width: 187px;
+    text-align: left;
+    background: #fff;
+    z-index: 20;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.search-info .search_close {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
 
 
 
 /* 미디어 쿼리 */
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
     #header .zzim-menu .zzim-mainbar > li {
         margin-left: 30px;
     }
@@ -236,4 +423,5 @@ button {
         margin-left: 40px;
         padding-left: 40px;
     }
-} */
+}
+

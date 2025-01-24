@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜린더</title>
+    <!-- <link rel="stylesheet" href="/static/css/default-common/font.css"> -->
+    <link rel="stylesheet" href="/static/css/default-common/default-common.css">
+    <link rel="stylesheet" href="/static/css/fix/header.css">
+    <!-- script 부분 -->
+    <script src="/static/js/fix/header.js" defer></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header id="header">
+            <div class="header-all-Wrapper">
+                <div class="header-inner-wrapper">
+                    <div class="zzimlendar-logo">
+                        <a href=""> <!--메인 페이지 이동-->
+                            <span class="zzimlendar-span">찜린더</span>
+                        </a>
+                    </div>
+                    <div class="zzim-menu"> 
+                        <div id="category" class="zzim-menubar">
+                            <ul class="zzim-mainbar">
+                                <li name="find-best-restaurant">
+                                    <a href="">맛집 찾기</a> <!--맛집 찾기 페이지 이동-->
+                                </li>
+                                <li name="theme">
+                                    <a href="">테마</a> <!--테마 페이지로 이동-->
+                                </li>
+                            </ul>
+                            <ul class="zzim-mainbar">
+                                <li name="zzimlendar"><a href="">찜린더</a></li> <!--찜린더 페이지 이동-->
+                                <li name="my-best-restaurant-list"><a href="">내 맛집 목록</a></li> <!--내 맛집 목록 페이지 이동-->
+                                <li name="etc"><a href="">보류</a></li> <!--보류-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="zzim-nav">
+                        <div class="utility-bar-icon">
+                            <ul>
+                                <li><button type="button" class="search-btn" onclick="toggleSearchInfo()"><i class="zzim-icon search" ></i><span class=zzimlendar-span>검색</span></button></li>
+                                <li><a href=""><i class="zzim-icon mypage"></i><span class="zzimlendar-span">마이페이지 
+                                </span></a></li> <!--마이 페이지 이동-->
+                                <li>
+                                    <a href="" class="login-btn">LOGOUT</a> <!--로그인 페이지로 이동-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-info overlay" onclick="closeSearchInfo()">
+            <form name action="" id="search-bar-form" method="get" target="_self" enctype="multipart/form-data" onclick="event.stopPropagation()"> <!--search 후 검색 html페이지 이동-->
+                <!-- <input type="text" name="banner-action" id="banner-action" value type="hidden"> -->
+                <div class="search-header">
+                    <div class="search-wrapper">
+                        <strong class="zzimlendar-span">검색어를 입력해주세요.</strong>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-box">
+                                <div class="search-form">
+                                    <input id="keyword" name="keyword" class="htms_input inputTypeText" placeholder="검색어를 입력하세요." onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"> <!--search쪽 js onkeyup, onmousedown일 때 함수 작성해야됨-->         
+						            &nbsp;
+                                    <button type="button" class="search-icon-btn" onclick=""> <!--onclick 함수 작성 필요, SEARCH_BANNER.submitSearchBanner(this); return false;-->
+                                        <!-- <img src="" alt="검색" loading="lazy"> 돋보기 img 필요 -->
+                                        검색
+                                    </button> 
+                                   <ul class="autoDrop"></ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form> 
+            <div class="search_close zzim-searchbtn" onclick="closeSearchInfo()">
+                <span class="zzimlendar-span">
+                    닫기
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

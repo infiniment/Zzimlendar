@@ -1,0 +1,304 @@
+#contents-wrapper .contents-main{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+#contents-wrapper {
+    position: relative;
+    min-height: 400px;
+    margin-top: 80px;
+    padding: 60px 0 160px;
+    background-color: #fff;
+}
+
+#footer {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.footer-inner-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 60px;
+}
+
+#footer .footer-area {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+#footer .footer-area ul {
+    vertical-align: middle;
+}
+
+#footer .footer-area ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+}
+
+#footer .footer-area > div {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+}
+
+#footer .footer-membership a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 10px;
+    padding-right: 30px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #151311 !important;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+#footer .footer-membership span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 10px;
+    padding-right: 30px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #151311 !important;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+#footer .footer-membership a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: 0.3s;
+}
+
+#footer .footer-membership span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: 0.3s;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+#footer .footer-tel {
+    float: right !important;
+    width: auto;
+    margin-right: 10px;
+}
+
+#footer .footer-tel p {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-top: 5px;
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #151311;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: right;
+}
+
+#footer .footer-tel span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-right: 30px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #151311 !important;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+#footer .footer-tel span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(//brownhaus.co.kr/images/common/icon_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: 0.3s;
+}
+
+#footer .footer-menu {
+    width: 100%;
+    text-align: left;
+}
+
+#footer .footer-menu > ul {
+    display: table;
+    width: 100%;
+}
+
+#footer .footer-menu > ul > li {
+    display: table-cell;
+    float: none;
+    width: 25%;
+    padding: 40px 50px;
+    vertical-align: top;
+}
+
+.linebox {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.linebox .footer-line::before {
+    border-right: none;
+}
+
+.linebox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 30px;
+    border-left: #151311 solid 1px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#footer .footer-menu > ul > li > ul > li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #151311;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+
+#footer .footer-menu > ul > li > ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 3px;
+    height: 3px;
+    background-color: #151311;
+}
+
+#footer .footer-menu strong {
+    font-weight: 600;
+}
+
+#footer .footer-menu a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linebox::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    border-top: #151311 solid 1px;
+    border-bottom: #151311 solid 1px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#footer .footer-area {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+#footer .footer-area ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer .footer-copyright{
+    float: left;
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #151311;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+#footer .footer-area strong {
+    font-weight: 700;
+}
+
+#footer .footer-by {
+    float: right;
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #151311;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+#footer .footer-by ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+}
+
+#footer .footer-by li {
+    margin-left: 25px;
+}

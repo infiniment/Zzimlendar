@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>찜린더</title>
-    <link rel="stylesheet" type="text/css" href="//optimizer.poxo.com/css/common/27f65f13d65624198b9d0001bceb94548239d4a9/1735192575" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//optimizer.poxo.com/css/brownhaus1/4b8fb60dc765631fb54535583f9d871520e65bc7.ba907aad2544325f5f061c68c6ee27de/1729841845" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/static/css/default-common/font.css"> -->
     <link rel="stylesheet" href="/static/css/default-common/default-common.css">
     <link rel="stylesheet" href="/static/css/fix/header.css">
+    <!-- script 부분 -->
+    <script src="/static/js/fix/header.js" defer></script>
 </head>
 <body>
     <div class="header-wrapper">
-        <header id="header">
+        <header id="header"> 
             <div class="header-all-Wrapper">
                 <div class="header-inner-wrapper">
                     <div class="zzimlendar-logo">
@@ -27,7 +28,7 @@
                                 </li>
                                 <li name="theme">
                                     <a href="">테마</a> <!--테마 페이지로 이동-->
-                                 </li>
+                                </li>
                             </ul>
                             <ul class="zzim-mainbar">
                                 <li name="zzimlendar"><a href="">찜린더</a></li> <!--찜린더 페이지 이동-->
@@ -39,7 +40,7 @@
                     <div class="zzim-nav">
                         <div class="utility-bar-icon">
                             <ul>
-                                <li><button type="button" class="search-btn"><i class="zzim-icon search"></i><span class=zzimlendar-span>검색</span></button></li>
+                                <li><button type="button" class="search-btn" onclick="toggleSearchInfo()"><i class="zzim-icon search"></i><span class=zzimlendar-span>검색</span></button></li>
                                 <li><a href=""><i class="zzim-icon mypage"></i><span class="zzimlendar-span">마이페이지 
                                 </span></a></li> <!--마이 페이지 이동-->
                                 <li>
@@ -51,6 +52,35 @@
                 </div>
             </div>
         </header>
+        <div class="search-info overlay" onclick="closeSearchInfo()">
+            <form name action="" id="search-bar-form" method="get" target="_self" enctype="multipart/form-data" onclick="event.stopPropagation()"> <!--search 후 검색 html페이지 이동-->
+                <!-- <input type="text" name="banner-action" id="banner-action" value type="hidden"> -->
+                <div class="search-header">
+                    <div class="search-wrapper">
+                        <strong class="zzimlendar-span">검색어를 입력해주세요.</strong>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-box">
+                                <div class="search-form">
+                                    <input id="keyword" name="keyword" class="htms_input inputTypeText" placeholder="검색어를 입력하세요." onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"> <!--search쪽 js onkeyup, onmousedown일 때 함수 작성해야됨-->         
+						            &nbsp;
+                                    <button type="button" class="search-icon-btn" onclick=""> <!--onclick 함수 작성 필요, SEARCH_BANNER.submitSearchBanner(this); return false;-->
+                                        <!-- <img src="" alt="검색" loading="lazy"> 돋보기 img 필요 -->
+                                        검색
+                                    </button> 
+                                   <ul class="autoDrop"></ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form> 
+            <div class="search_close zzim-searchbtn" onclick="closeSearchInfo()">
+                <span class="zzimlendar-span">
+                    닫기
+                </span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
