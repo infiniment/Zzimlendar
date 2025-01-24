@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zzimlendar</title>
+    <link rel="stylesheet" href="/zzimlendar/static/css/default-common/default-common.css" />
+    <link rel="stylesheet" href="/zzimlendar/static/css/mypage/mypage.css" />
+</head>
+<body id="sub" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="vsc-initialized">
+    <aside id="aside" data-ez="contents-0rg2ex5-1">
+        <ul>
+            <li>
+                <a href="https://pf.kakao.com/_HCYxfC" target="blank" class="a_kakao">
+                    <span class="blind">카카오톡 문의</span>
+                </a>
+            </li>
+		    <li>
+                <button type="button" class="a_top">
+                    <span class="blind">TOP</span></button>
+                </li>
+	    </ul>
+    </aside>
+
+    <div class="c_sub" id="contents">
+        <style>
+            #contents.c_sub .cs_navitop .csn_item.main > a {text-decoration:underline; text-underline-position:under;}
+            #contents.c_sub .cs_navi .csn_item.myshop {display:inline-block; padding-bottom:30px;}
+            #contents.c_sub .cs_navi .csn_item.mybenefit,
+            #contents.c_sub .cs_navi .csn_item.myactivity {display:inline-block; padding:30px 0; border-top:#151311 solid 1px;}
+            #contents.c_sub .cs_info {display:inline-block}
+        </style>
+        <div class="path">
+            <ol><li><a href="/">홈</a></li>
+                <li class="on">마이페이지</li>
+            </ol></div>
+        <div class="cs_wrap">
+            <div class="xans-element- xans-layout xans-layout-statelogon cs_navitop "><div class="csn_item main">
+                <a href="/zzimlendar/templates/mypage/mypage.html">MYPAGE</a>
+            </div>
+        <div class="csn_item myshop">
+                <a href="/myshop/order/list.html">나의 예약 정보</a>
+            </div>
+        <div class="csn_item mybenefit">
+                <a href="/myshop/mileage/historyList.html">나의 찜린더</a>
+            </div>
+        <div class="csn_item myactivity">
+                <a href="/board/11-%EB%AC%B8%EC%9D%98/9/">나의 활동 정보</a>
+            </div>
+        <div class="csn_item myservice">
+                <a href="/myshop/customer.html">고객서비스</a>
+            </div>
+        <div class="csn_item logout">
+                <a href="/exec/front/Member/logout/">LOGOUT</a>
+            </div>
+        </div>
+            <div class="xans-element- xans-layout xans-layout-statelogon cs_navi "><div class="xans-element- xans-layout xans-layout-statelogon csn_item myshop "><strong>나의 예약 정보</strong>
+        <ul>
+        <li class="csn_orderlist"><a href="/myshop/order/list.html">예약 내역 조회</a></li>
+                    <!--<li class="csn_ordercancel"><a href="/myshop/order/list.html?mode=cs">취소/반품/교환 조회</a></li>-->
+                    <!-- <li class="csn_orderold"><a href="/myshop/order/list_past.html">과거주문내역</a></li> -->
+                </ul>
+        </div>
+        <div class="xans-element- xans-layout xans-layout-statelogon csn_item mybenefit "><strong>나의 찜린더</strong>
+        <ul>
+        <li class="csn_point"><a href="/myshop/mileage/historyList.html">적립금</a></li>
+                    <li class="csn_coupon"><a href="/myshop/coupon/coupon.html">쿠폰</a></li>
+                    <!-- <li class="csn_deposit"><a href="/myshop/deposits/historyList.html">예치금</a></li> -->
+                </ul>
+        </div>
+        <div class="xans-element- xans-layout xans-layout-statelogon csn_item myactivity "><strong>나의 활동 정보</strong>
+        <ul>
+        <li class="csn_board"><a href="/board/inquiry/9/">1:1 문의 내역</a></li>
+                    <li class="csn_review"><a href="/myshop/board_list.html">맛집 리뷰</a></li>
+                    <!--<li class="csn_wishlist"><a href="/myshop/wish_list.html">관심상품</a></li>-->
+                    <!--<li class="csn_delivery"><a href="/myshop/addr/list.html">배송 주소록 관리</a></li>-->
+                    <li class="csn_modify"><a href="/member/modify.html">회원정보 수정</a></li>
+                </ul>
+        </div>
+        </div>
+            <div class="cs_myshop">
+                
+        <div class="xans-element- xans-layout xans-layout-statelogon cs_info "><div class="xans-element- xans-myshop xans-myshop-asyncbenefit csi_contents "><div class="ec-base-box typeMember gMessage ">
+                    <strong><span><span class="xans-member-var-name">정규민</span></span></strong>
+                   <span>멤버십 등급 : <span class="xans-member-var-group_name">lv. 1</span><span class="myshop_benefit_ship_free_message"></span></span> <!--<a href="/member/benefit.html" class="csi_benefit btn small t1">등급 혜택 보기</a>-->
+                </div>
+        </div>
+        <div class="ec-base-box typeMember gMessage csi_admin">
+                <strong>관리자 아이디로 로그인</strong>
+            </div>
+        <div class="xans-element- xans-myshop xans-myshop-asyncbankbook ec-base-box gHalf "><ul>
+        <li class=" csi_point">
+                        <!--<strong class="title">적립금</strong>
+                        <strong class="data use"><a href="/myshop/mileage/historyList.html"><span id="xans_myshop_bankbook_avail_mileage">0원</span><span class="csi_default blind">0원</span></a></strong>
+                    </li>
+                    <li class=" csi_coupon">
+                        <strong class="title">쿠폰</strong>
+                        <strong class="data"><a href="/myshop/coupon/coupon.html"><span id="xans_myshop_bankbook_coupon_cnt">1</span><span class="csi_default blind">0</span><span>장</span></a></strong>
+                    </li>-->
+                    <li class="csi_total">
+                        <strong class="title">총 주문금액</strong>
+                        <strong class="data"><span id="xans_myshop_bankbook_order_price">0원</span><span class="csi_default blind">0원</span></strong>
+                    </li>
+                </ul>
+        </div>
+        <a href="/member/modify.html" class="csi_modify blind">회원정보 수정</a>
+        </div>
+        
+                <div class="xans-element- xans-myshop xans-myshop-orderstate "><div class="title bold">
+                        <h3>예약 처리 현황 <span class="desc">(최근 3개월 기준)</span>
+        </h3>
+                    </div>
+        <div class="state">
+                        <ul class="order">
+        <li>
+                                <a href="/myshop/order/list.html?order_status=shipped_before" class="count"><span id="xans_myshop_orderstate_shppied_before_count">0</span></a>
+                                <strong>즐겨찾기 <i></i></strong>
+                            </li>
+                            <li>
+                                <a href="/myshop/order/list.html?order_status=shipped_standby" class="count"><span id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
+                                <strong>찜린더 <i></i></strong>
+                            </li>
+                            <li>
+                                <a href="/myshop/order/list.html?order_status=shipped_begin" class="count"><span id="xans_myshop_orderstate_shppied_begin_count">0</span></a>
+                                <strong>예약중 <i></i></strong>
+                            </li>
+                            <li>
+                                <a href="/myshop/order/list.html?order_status=shipped_complate" class="count"><span id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
+                                <strong>예약완료</strong>
+                            </li>
+                        </ul>
+        <ul class="cs">
+        <li>
+                                <!-- <span class="icoDot"></span> -->
+                                <strong>취소 예약건</strong>
+                                <a href="/myshop/order/list.html?order_status=order_cancel" class="count"><span id="xans_myshop_orderstate_order_cancel_count">0</span>건</a>
+                            </li>
+                            <li>
+                                <!-- <span class="icoDot"></span> -->
+                                <strong>예약 완료건</strong>
+                                <a href="/myshop/order/list.html?order_status=order_exchange" class="count"><span id="xans_myshop_orderstate_order_exchange_count">0</span>건</a>
+                            </li>
+                            <li>
+                                <!-- <span class="icoDot"></span> -->
+                                <strong>맛집 리뷰건</strong>
+                                <a href="/myshop/order/list.html?order_status=order_return" class="count"><span id="xans_myshop_orderstate_order_return_count">0</span>건</a>
+                            </li>
+                        </ul>
+        </div>
+        </div>
+                <div class="xans-element- xans-myshop xans-myshop-orderhistorylistitem ec-base-table typeList"><!--
+                        $login_url = /member/login.html
+                    -->
+        <h3 class="title w100p bold" style="margin-bottom:10px;">
+                        최근 예약내역
+                        <div class="navi small">
+                            <a class="more mt5" href="/myshop/order/list.html"><i></i><span class="blind">바로가기</span></a>
+                        </div>
+                    </h3>
+        <div>
+                                    </div><div>
+                                    </div><div>
+                                    </div><div>
+                                    </div><table border="1" summary="">
+        <caption>예약 맛집 정보</caption>
+                        <colgroup>
+        <col style="width:160px;">
+        <col style="width:85px;">
+        <col style="width:auto;">
+        <col style="width:100px;">
+        <col style="width:120px;">
+        <col style="width:120px;">
+        <col style="width:120px;">
+        </colgroup>
+        <thead><tr>
+        <th scope="col">예약날짜<br>[예약번호]</th>
+                                <th scope="col">이미지</th>
+                                <th scope="col">맛집정보</th>
+                                <th scope="col">인수</th>
+                                <th scope="col">예약일자</th>
+                                <th scope="col">예약상태</th>
+                                <th scope="col">취소신청</th>
+                            </tr></thead>
+        <tbody class="center displaynone">
+        <tr title="" class="">
+        <td class="number displaynone">
+                                        <span class="rentBadge displaynone">렌탈</span>
+                                        <p></p>
+                                                                        <p><a href="./order/detail.html" class="line">[]</a></p>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">예약취소</a>
+                                        <a href="./order/cancel.html" class="btnNormal displaynone">취소신청</a>
+                                        <!--<a href="./order/exchange.html" class="btnSubmit displaynone">교환신청</a>
+                                        <a href="./order/return.html" class="btnNormal displaynone">반품신청</a>-->
+                                    </td>
+                                    <td class="thumb"><a href="/product/detail.html"><img src="//img.echosting.cafe24.com/thumb/img_product_small.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt=""></a></td>
+                                    <td class="product left top">
+                                        <strong class="name"></strong>
+                                        <div class="option displaynone"></div>
+                                        <ul class="xans-element- xans-myshop xans-myshop-optionset option"><li class="">
+        <strong></strong> (개)</li>
+        </ul>
+        <p class="gBlank5 displaynone">무이자할부 상품</p>
+                                    </td>
+                                    <td></td>
+                                    <td class="right">
+                                        <div class="displaynone"><strong></strong></div>
+                                        <div class="displaynone"><strong></strong></div>
+                                        <div class="displaynone">(월 렌탈 금액)</div>
+                                        <div class="displaynone"></div>
+                                    </td>
+                                    <td class="state">
+                                        <p class="txtEm"></p>
+                                        <p class="displaynone"><a href="" target=""></a></p>
+                                        <p class="displaynone"><a href="#none" class="line" onclick="">[]</a></p>
+                                        <a href="/board/product/write.html" class="btnSubmit displaynone">구매후기</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">구매확정</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">취소철회</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">교환철회</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">반품철회</a>
+                                    </td>
+                                    <td>
+                                        <p class="displaynone"><a href="#none" class="btnNormal" onclick="">상세정보</a></p>
+                                        <p class="displaynone">-</p>
+                                    </td>
+                                
+                                </tr><tr class="payDetail blind displaynone">
+        <td colspan="7" class="right">
+                                            상품구매금액 <span></span> + 배송비 <span></span><span class="displaynone"> - 총 할인금액  </span><span class="displaynone"> - 총 부가결제금액 </span><span class="displaynone"> + 세액 </span> = <strong>총 결제금액</strong>: <strong class="txtEm"> </strong><span></span>
+                                        </td>
+                                    </tr>
+        
+                            
+        <tr title="" class="">
+        <td class="number displaynone">
+                                        <span class="rentBadge displaynone">렌탈</span>
+                                        <p></p>
+                                                                        <p><a href="./order/detail.html" class="line">[]</a></p>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">예약취소</a>
+                                        <a href="./order/cancel.html" class="btnNormal displaynone">취소신청</a>
+                                        <!--<a href="./order/exchange.html" class="btnSubmit displaynone">교환신청</a>
+                                        <a href="./order/return.html" class="btnNormal displaynone">반품신청</a>-->
+                                    </td>
+                                    <td class="thumb"><a href="/product/detail.html"><img src="//img.echosting.cafe24.com/thumb/img_product_small.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt=""></a></td>
+                                    <td class="product left top">
+                                        <strong class="name"></strong>
+                                        <div class="option displaynone"></div>
+                                        <ul class="xans-element- xans-myshop xans-myshop-optionset option"><li class="">
+        <strong></strong> (개)</li>
+        </ul>
+        <p class="gBlank5 displaynone">무이자할부 상품</p>
+                                    </td>
+                                    <td></td>
+                                    <td class="right">
+                                        <div class="displaynone"><strong></strong></div>
+                                        <div class="displaynone"><strong></strong></div>
+                                        <div class="displaynone">(월 렌탈 금액)</div>
+                                        <div class="displaynone"></div>
+                                    </td>
+                                    <td class="state">
+                                        <p class="txtEm"></p>
+                                        <p class="displaynone"><a href="" target=""></a></p>
+                                        <p class="displaynone"><a href="#none" class="line" onclick="">[]</a></p>
+                                        <a href="/board/product/write.html" class="btnSubmit displaynone">구매후기</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">구매확정</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">취소철회</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">교환철회</a>
+                                        <a href="#none" class="btnNormal displaynone" onclick="">반품철회</a>
+                                    </td>
+                                    <td>
+                                        <p class="displaynone"><a href="#none" class="btnNormal" onclick="">상세정보</a></p>
+                                        <p class="displaynone">-</p>
+                                    </td>
+                                
+                                </tr><tr class="payDetail displaynone">
+        <td colspan="7" class="right">
+                                            상품구매금액 <span></span> + 배송비 <span></span><span class="displaynone"> - 총 할인금액  </span><span class="displaynone"> - 총 부가결제금액 </span><span class="displaynone"> + 세액 </span> = <strong>총 결제금액</strong>: <strong class="txtEm"> </strong><span></span>
+                                        </td>
+                                    </tr>
+        
+                            
+        </tbody>
+        </table>
+        <p class="message ">예약 내역이 없습니다.</p>
+        </div>
+                <div class="xans-element- xans-myshop xans-myshop-wishlist ec-base-table typeList mt40 xans-record-"><h3 class="title w100p bold" style="margin:0">
+                        관심 맛집
+                        <div class="navi small">
+                            <a class="more mt5" href="/myshop/wish_list.html"><i></i><span class="blind">바로가기</span></a>
+                        </div>
+                    </h3>
+        <!--
+                        $login_page = /member/login.html
+                        $count = 4
+                        $use_per_add_option = yes
+                    -->
+        <p class="message ">관심 맛집 리스트가 없습니다.</p>
+        </div>
+                <div class="xans-element- xans-board xans-board-listpackage-1 xans-board-listpackage xans-board-1 cs_board mt80 blind "><div class="ec-base-table typeList gLine" style="display:inline-block; width:100%;">
+                        <h3 class="title w100p mb10 t3 semibold">
+                            공지사항
+                            <div class="navi small">
+                                <a class="more mt5" href="/board/notice/1/"><i></i><span class="blind">바로가기</span></a>
+                            </div>
+                        </h3>
+                        <table border="1" summary="">
+        <caption>공지사항 목록</caption>
+                        
+                        <colgroup>
+        <col style="width:90px;">
+        <col style="width:auto;">
+        <col style="width:130px;">
+        <col style="width:90px;">
+        </colgroup><thead class="xans-element- xans-board xans-board-listheader-1 xans-board-listheader xans-board-1 "><tr>
+        <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">작성일</th>
+                                <th scope="col">조회수</th>
+                            </tr></thead>
+        </table>
+        </div>
+        </div>
+            </div>
+        </div>
+        
+            </div>
+        <script src="/zzimlendar/static/js/mypage/mypage.js"></script>
+</body>
+</html>
